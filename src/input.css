@@ -148,6 +148,7 @@ nav a:hover {
 .maintitle {
     font-family: var(--font-BBH);
     @apply
+    tracking-wide
     text-[#FFF0DD]
     font-bold
     p-[10px] 
@@ -481,7 +482,7 @@ nav a:hover {
   hover:text-lg;
 }
 
-.list {
+.listmia {
   @apply 
   py-1 
   transition-all 

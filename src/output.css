@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.16 | MIT License | https://tailwindcss.com */
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
@@ -21,6 +21,7 @@
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-bold: 700;
+    --tracking-wide: 0.025em;
     --leading-relaxed: 1.625;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
@@ -378,6 +379,8 @@ nav a:hover {
   font-size: 50px;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
+  --tw-tracking: var(--tracking-wide);
+  letter-spacing: var(--tracking-wide);
   color: #FFF0DD;
   @media (width >= 48rem) {
     margin-top: 200px;
@@ -746,7 +749,7 @@ nav a:hover {
     }
   }
 }
-.list {
+.listmia {
   padding-block: calc(var(--spacing) * 1);
   transition-property: all;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -885,6 +888,10 @@ nav a:hover {
   syntax: "*";
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-ease {
   syntax: "*";
   inherits: false;
@@ -968,6 +975,7 @@ nav a:hover {
       --tw-border-style: solid;
       --tw-duration: initial;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-ease: initial;
       --tw-translate-x: 0;
       --tw-translate-y: 0;
