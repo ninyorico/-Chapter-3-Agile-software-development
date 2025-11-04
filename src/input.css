@@ -468,7 +468,27 @@ nav a:hover {
 
 
 /*Mia's Custom Style*/
+.paragraphmia { 
+  @apply 
+  py-[10px] 
+  rounded-[9px] 
+  max-w-fit 
+  indent-8 
+  text-justify 
+  transition-all 
+  duration-300 
+  hover:font-bold 
+  hover:text-lg;
+}
 
+.list {
+  @apply 
+  py-1 
+  transition-all 
+  duration-300 
+  hover:font-bold 
+  hover:text-lg;
+}
 /*Mia's Custom Style*/
 
 
