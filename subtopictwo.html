@@ -11,129 +11,181 @@
 <body class="body">
 
     <nav class="nav">
-            <a class="home" href="index.html">Home</a>
-            <a class="sto" href="Subtopicone.html">3.1 Agile Methods</a>
-            <a href="subtopictwo.html">3.2 Plan-Driven & Agile Dev</a>
-            <a href="ExtremeProgramming.html">3.3 Extreme Programming</a>
-            <a href="Subtopicfour.html">3.4 Agile Project Management</a>
-            <a href="Subtopicfive.html">3.5 Scaling Agile Methods</a>
-        </nav>
+        <a class="home" href="index.html">Home</a>
+        <a class="sto" href="Subtopicone.html">3.1 Agile Methods</a>
+        <a href="subtopictwo.html">3.2 Plan-Driven & Agile Dev</a>
+        <a href="ExtremeProgramming.html">3.3 Extreme Programming</a>
+        <a href="Subtopicfour.html">3.4 Agile Project Management</a>
+        <a href="Subtopicfive.html">3.5 Scaling Agile Methods</a>
+    </nav>
 
 
     <main class="main">
         <h1 class="maintitle">3.2 Plan-Driven and Agile Development</h1>
 
         <Section class="sectionismonin">
-        <p class="paragraphonin">Agile approaches to software development consider design and implementation to be
-            the central activities in the software process. They incorporate other activities, such as
-            requirements elicitation and testing, into design and implementation. By contrast, a
-            plan-driven approach to software engineering identifies separate stages in the software process with outputs
-            associated with each stage. The outputs from one stage are
-            used as a basis for planning the following process activity. Figure 3.2 shows the distinctions between
-            plan-driven and agile approaches to system specification</p>
-        <p class="paragraphonin">In a plan-driven approach, iteration occurs within activities with formal documents used to communicate
-            between stages of the process. For example, the requirements will evolve and, ultimately, a requirements
-            specification will be produced.
-            This is then an input to the design and implementation process. In an agile approach,
-            iteration occurs across activities. Therefore, the requirements and the design are
-            developed together, rather than separately</p>
+            <p class="paragraphonin">Agile approaches to software development consider design and implementation to be
+                the central activities in the software process. They incorporate other activities, such as
+                requirements elicitation and testing, into design and implementation. By contrast, a
+                plan-driven approach to software engineering identifies separate stages in the software process with
+                outputs
+                associated with each stage. The outputs from one stage are
+                used as a basis for planning the following process activity. Figure 3.2 shows the distinctions between
+                plan-driven and agile approaches to system specification</p>
+            <p class="paragraphonin">In a plan-driven approach, iteration occurs within activities with formal documents
+                used to communicate
+                between stages of the process. For example, the requirements will evolve and, ultimately, a requirements
+                specification will be produced.
+                This is then an input to the design and implementation process. In an agile approach,
+                iteration occurs across activities. Therefore, the requirements and the design are
+                developed together, rather than separately</p>
 
-        <img class="imageonin" src="Screenshot 2025-09-03 084827.png" alt="Plan-Based Development">
+            <img class="imageonin" src="Screenshot 2025-09-03 084827.png" alt="Plan-Based Development">
 
-        <p class="figureonin">Figure 3.2 Plan-driven and agile development</p>
-        <p  class="paragraphonin">A plan-driven software process can support incremental development and delivery. It is perfectly feasible to
-            allocate requirements and plan the design and development phase as a series of increments. An agile process
-            is not inevitably code-focused
-            and it may produce some design documentation. As I discuss in the following section, the agile development
-            team may decide to include a documentation ‘spike’,
-            where, instead of producing a new version of a system, the team produce system
-            documentation.</p>
+            <p class="figureonin">Figure 3.2 Plan-driven and agile development</p>
+            <p class="paragraphonin">A plan-driven software process can support incremental development and delivery. It
+                is perfectly feasible to
+                allocate requirements and plan the design and development phase as a series of increments. An agile
+                process
+                is not inevitably code-focused
+                and it may produce some design documentation. As I discuss in the following section, the agile
+                development
+                team may decide to include a documentation ‘spike’,
+                where, instead of producing a new version of a system, the team produce system
+                documentation.</p>
 
-        <p class="paragraphonin">In fact, most software projects include practices from plan-driven and agile
-            approaches. To decide on the balance between a plan-based and an agile approach,
-            you have to answer a range of technical, human, and organizational questions:</p>
+            <p class="paragraphonin">In fact, most software projects include practices from plan-driven and agile
+                approaches. To decide on the balance between a plan-based and an agile approach,
+                you have to answer a range of technical, human, and organizational questions:</p>
 
-        <ol class="olistsonin">
+            <ol class="olistsonin">
+                <li class="listonin" data-number="1">
+                    <div class="listonin-content">
+                        Is it important to have a very detailed specification and design before moving to
+                        implementation?
+                        If so, you probably need to use a plan-driven approach.
+                    </div>
+                </li>
 
-            <li class="listonin">Is it important to have a very detailed specification and design before moving to
-                implementation? If so, you probably need to use a plan-driven approach.
-            </li>
-            <li class="list">Is an incremental delivery strategy, where you deliver the software to customers
-                and get rapid feedback from them, realistic? If so, consider using agile methods.
-            </li>
-            <li class="list">How large is the system that is being developed? Agile methods are most effective when the system can be
-                developed with a small co-located team who can
-                communicate informally. This may not be possible for large systems that require
-                larger development teams so a plan-driven approach may have to be used.
-            </li>
-            <li class="list">What type of system is being developed? Systems that require a lot of analysis
-                before implementation (e.g., real-time system with complex timing requirements) usually need a fairly
-                detailed design to carry out this analysis. A plandriven approach may be best in those circumstances.
-            </li>
+                <li class="listonin" data-number="2">
+                    <div class="listonin-content">
+                        Is an incremental delivery strategy, where you deliver the software to customers and get rapid
+                        feedback from them, realistic?
+                        If so, consider using agile methods.
+                    </div>
+                </li>
 
-            <li class="list"> What is the expected system lifetime? Long-lifetime systems may require more
-                design documentation to communicate the original intentions of the system developers to the support
-                team.
-                However, supporters of agile methods rightly
-                argue that documentation is frequently not kept up to date and it is not of much
-                use for long-term system maintenance.
-            </li>
-            <li class="list"> What technologies are available to support system development? Agile methods
-                often rely on good tools to keep track of an evolving design. If you are developing a system using an
-                IDE
-                that does not have good tools for program visualization and analysis, then more design documentation may
-                be
-                required.
-            </li>
-            <li class="list">How is the development team organized? If the development team is distributed
-                or if part of the development is being outsourced, then you may need to develop
-                design documents to communicate across the development teams. You may
-                need to plan in advance what these are.
-            </li>
-            <li class="list">Are there cultural issues that may affect the system development? Traditional
-                engineering organizations have a culture of plan-based development, as this is
-                the norm in engineering. This usually requires extensive design documentation,
-                rather than the informal knowledge used in agile processes.
-            </li>
-            <li class="list">How good are the designers and programmers in the development team? It is
-                sometimes argued that agile methods require higher skill levels than plan-based
-                approaches in which programmers simply translate a detailed design into code.
-                If you have a team with relatively low skill levels, you may need to use the best
-                people to develop the design, with others responsible for programming.</li>
-            <li class="list">Is the system subject to external regulation? If a system has to be approved by an
-                external regulator (e.g., the Federal Aviation Authority [FAA] approve software
-                that is critical to the operation of an aircraft) then you will probably be required
-                to produce detailed documentation as part of the system safety case.
-            </li>
-        </ol>
+                <li class="listonin" data-number="3">
+                    <div class="listonin-content">
+                        How large is the system that is being developed? Agile methods are most effective when the
+                        system can be developed with a small co-located team
+                        who can communicate informally. This may not be possible for large systems that require larger
+                        development teams,
+                        so a plan-driven approach may have to be used.
+                    </div>
+                </li>
+
+                <li class="listonin" data-number="4">
+                    <div class="listonin-content">
+                        What type of system is being developed? Systems that require a lot of analysis before
+                        implementation
+                        (e.g., real-time systems with complex timing requirements) usually need a fairly detailed design
+                        to carry out this analysis.
+                        A plan-driven approach may be best in those circumstances.
+                    </div>
+                </li>
+
+                <li class="listonin" data-number="5">
+                    <div class="listonin-content">
+                        What is the expected system lifetime? Long-lifetime systems may require more design
+                        documentation
+                        to communicate the original intentions of the system developers to the support team.
+                        However, agile supporters argue that documentation is often not kept up to date and is less
+                        useful for long-term maintenance.
+                    </div>
+                </li>
+
+                <li class="listonin" data-number="6">
+                    <div class="listonin-content">
+                        What technologies are available to support system development?
+                        Agile methods often rely on good tools to keep track of an evolving design.
+                        If your IDE lacks good visualization and analysis tools, more design documentation may be
+                        required.
+                    </div>
+                </li>
+
+                <li class="listonin" data-number="7">
+                    <div class="listonin-content">
+                        How is the development team organized?
+                        If the development team is distributed or if part of the work is outsourced,
+                        you may need design documents to communicate across teams and plan these in advance.
+                    </div>
+                </li>
+
+                <li class="listonin" data-number="8">
+                    <div class="listonin-content">
+                        Are there cultural issues that may affect system development?
+                        Traditional engineering organizations have a culture of plan-based development,
+                        which usually requires extensive design documentation.
+                    </div>
+                </li>
+
+                <li class="listonin" data-number="9">
+                    <div class="listonin-content">
+                        How skilled are the designers and programmers in the development team?
+                        Agile methods often require higher skill levels than plan-based approaches.
+                        If your team has lower skill levels, you might assign your best developers to design and others
+                        to coding.
+                    </div>
+                </li>
+
+                <li class="listonin" data-number="10">
+                    <div class="listonin-content">
+                        Is the system subject to external regulation?
+                        If it must be approved by an external regulator (e.g., the FAA for aircraft software),
+                        you’ll probably need to produce detailed documentation as part of the system safety case.
+                    </div>
+                </li>
+            </ol>
 
 
-        <p  class="paragraphonin">In reality, the issue of whether a project can be labelled as plan-driven or agile is
-            not very important. Ultimately, the primary concern of buyers of a software system
-            is whether or not they have an executable software system that meets their needs and
-            does useful things for the individual user or the organization. In practice, many companies who claim to
-            have used agile methods have adopted some agile practices and
-            have integrated these with their plan-driven processes.</p>
 
-            </Section>
+
+
+            <p class="paragraphonin">In reality, the issue of whether a project can be labelled as plan-driven or agile
+                is
+                not very important. Ultimately, the primary concern of buyers of a software system
+                is whether or not they have an executable software system that meets their needs and
+                does useful things for the individual user or the organization. In practice, many companies who claim to
+                have used agile methods have adopted some agile practices and
+                have integrated these with their plan-driven processes.</p>
+
+        </Section>
     </main>
 
-    
+
+    <script>
+        document.querySelectorAll('.listonin').forEach((card) => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('active');
+            });
+        });
+    </script>
 
 </body>
 
 <footer class="footer">
-        <p id="footers"> Copyright © 2011, 2006, 2005, 2001, 1996 Pearson Education, Inc., publishing as Addison-Wesley.
-            All
-            rights reserved. <br><br>
+    <p id="footers"> Copyright © 2011, 2006, 2005, 2001, 1996 Pearson Education, Inc., publishing as Addison-Wesley.
+        All
+        rights reserved. <br><br>
 
-            Manufactured in the United States of America. This publication is protected by copyright,
-            and permission should be obtained from the publisher prior to any prohibited reproduction, storage in a
-            retrieval system, or transmission in any form or by any means, electronic, mechanical, photocopying,
-            recording, or likewise.</p>
+        Manufactured in the United States of America. This publication is protected by copyright,
+        and permission should be obtained from the publisher prior to any prohibited reproduction, storage in a
+        retrieval system, or transmission in any form or by any means, electronic, mechanical, photocopying,
+        recording, or likewise.</p>
 
-            <h3>Created by: Nino Rico Bancoro</h3>
+    <h3>Created by: Nino Rico Bancoro</h3>
 
-    </footer>
+</footer>
 
 </html>

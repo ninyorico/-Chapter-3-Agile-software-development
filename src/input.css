@@ -335,31 +335,113 @@ nav a:hover {
 }
 
 
-.olistsonin{
+.olistsonin {
   @apply
-    list-decimal 
-    list-inside 
-    py-6 
-    px-8 
-    my-8 
-    rounded-lg 
-    bg-[#001BB7]/30 
-    border-l-7 
-    border-[#00FFFF] 
-    text-justify 
-    shadow-lg 
-    space-y-3;
+    flex
+    flex-col
+    space-y-6
+    my-10
+    p-8
+    rounded-xl
+    bg-[#001BB7]/30
+    shadow-xl
+    border-l-8
+    border-[#00FFFF]/60
+    text-justify;
+  
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.6),
+    inset 0 0 20px rgba(0, 255, 255, 0.2);
+}
 
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), 
-  inset 0 0 10px rgba(0, 255, 255, 0.2);
-  transition: all 0.3s ease-in-out;
+
+.listonin {
+  @apply
+    bg-[#002DFF]/40
+    rounded-xl
+    shadow-lg
+    transition-all
+    duration-500
+    ease-in-out
+    cursor-pointer
+    border-l-4
+    border-[#00FFFF]/30
+    text-[#E9E9E9]
+    overflow-hidden
+    relative
+    flex
+    items-center
+    justify-center
+    text-4xl
+    font-bold;
+  
+  backdrop-filter: blur(4px);
+  min-height: 100px;
 }
-.olistsonin li:hover {
-  background: linear-gradient(90deg, rgba(0,255,255,0.2), rgba(0,0,255,0.2));
-  border-left-color: #00FFFF;
-  transform: translateX(5px);
-  transition: all 0.3s ease-in-out;
+
+
+.listonin::before {
+  content: attr(data-number);
+  @apply
+    absolute
+    inset-0
+    flex
+    items-center
+    justify-center
+    text-[#00FFFF]
+    transition-opacity
+    duration-500
+    ease-in-out;
+  opacity: 1;
 }
+
+
+.listonin-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.7;
+  transition: all 0.6s ease-in-out;
+}
+
+
+.listonin.active::before {
+  opacity: 0;
+}
+
+.listonin.active {
+  @apply
+    bg-[#002DFF]/60
+    border-[#00FFFF]
+    p-6
+    text-base
+    font-normal
+    flex
+    items-start
+    justify-start;
+  
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.5),
+    inset 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.listonin.active .listonin-content {
+  max-height: 1000px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+
+.listonin:hover {
+  @apply scale-[1.01] shadow-2xl;
+  box-shadow:
+    0 4px 15px rgba(0, 255, 255, 0.4),
+    inset 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
 
 /*Nino's Custom Style*/
 
